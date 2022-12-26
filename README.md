@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Aditya1614&show_icons=true&theme=transparent)
+
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=Aditya1614)](https://git.io/streak-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya1614&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 <!--
 **Aditya1614/Aditya1614** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
