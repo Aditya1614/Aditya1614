@@ -1,5 +1,5 @@
-# 💫 About Me:
-Hi there 👋 my name is Aditya Candra Gumilang. I'm a Computer Science Student at Bina Sarana Informatika University. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. I have worked on technologies like Python, Tensoflow, ScikitLearn, PyTorch, Flutter, Kotlin, HTML5, CSS, Java. I am passionate about developing complex applications that solve real-world problems impacting millions of users.
+# About Me:
+Hi there 👋 my name is Aditya Candra Gumilang. I'm a Computer Science Student, i enjoy problem-solving and coding. Always strive to bring 100% to the work I do. I have worked on technologies like Python, Tensoflow, ScikitLearn, PyTorch, Flutter, Kotlin, HTML5, CSS, Java. I am passionate about developing complex applications that solve real-world problems impacting millions of users.
 
 
 ## 🌐 Socials:
