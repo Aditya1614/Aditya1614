@@ -1,6 +1,5 @@
 # About Me:
-Hi there 👋 my name is Aditya Candra Gumilang. I'm a Computer Science Student. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. I have worked on technologies like Python, Tensoflow, ScikitLearn, PyTorch, Flutter, Kotlin, HTML5, CSS, Java. I am passionate about developing complex applications that solve real-world problems impacting millions of users.
-
+Hi there 👋 my name is Aditya Candra Gumilang. I'm a Computer Science Student. I am passionate about data analysis, data science and machine learning. with proven skills and experience in these fields. I have experience working with a variety of tools and programming languages including Python, Tensorflow, SQL, Pandas, and others. I am dedicated to developing complex applications that solve real-world problems and impact millions of users.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/aditya_candra_gumilang) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/aditya-candra-gumilang) 
