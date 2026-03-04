@@ -1,0 +1,98 @@
+site_name: Aditya Candra Gumilang — AI Engineer Portfolio
+site_description: Data Engineer & AI Engineer specializing in GCP, computer vision, and AI-powered analytics systems.
+site_author: Aditya Candra Gumilang
+site_url: https://aditya1614.github.io/Aditya1614/
+
+repo_name: Aditya1614
+repo_url: https://github.com/Aditya1614
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/brain
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - toc.follow
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/adityacg
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/Aditya1614
+      name: GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/aditya_candra_gumilang
+      name: Instagram
+    - icon: fontawesome/solid/envelope
+      link: mailto:adityacandragum@gmail.com
+      name: Email
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Experience: experience.md
+  - Projects:
+      - Overview: projects/index.md
+      - QC Detector: projects/qc-detector.md
+      - Prompt-to-Visualization: projects/prompt-to-viz.md
+  - Skills: skills.md
+  - Contact: contact.md
