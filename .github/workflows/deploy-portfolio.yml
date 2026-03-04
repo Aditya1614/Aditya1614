@@ -3,14 +3,25 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages-portfolio
+      - gh-pages-portfolio   # ⚠ change to your main working branch
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    environment:
+      name: gh-pages-portfolio   
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,10 +31,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install MkDocs and dependencies
+      - name: Install dependencies
         run: |
-          pip install mkdocs-material
-          pip install pillow cairosvg
+          pip install mkdocs-material pillow cairosvg
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        id: deployment
+        uses: actions/deploy-pages@v4
