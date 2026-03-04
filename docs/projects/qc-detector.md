@@ -84,13 +84,6 @@ QC Detector is a **production-grade quality control automation system** develope
 
 ### Sub-Pixel Edge Detection
 
-```python
-# Sobel gradient magnitude for sub-pixel accuracy
-sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
-sobely = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
-magnitude = np.sqrt(sobelx**2 + sobely**2)
-```
-
 - Sobel gradient magnitude for sub-pixel precision
 - Gradient direction coherence analysis
 - Directional edge bridging to prevent over-segmentation
@@ -106,37 +99,6 @@ magnitude = np.sqrt(sobelx**2 + sobely**2)
 - **ArUco marker auto-calibration** — real-time mm/pixel ratio from reference markers
 - **Lens distortion compensation** — corrects fisheye/barrel distortion
 - **Real-time ratio updates** — recalibrates on every frame
-
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                  PySide6 Desktop GUI                    │
-│   Live Camera | Photo Mode | Video Mode | SKU Manager  │
-└────────────────────────┬────────────────────────────────┘
-                         │
-         ┌───────────────┼──────────────────┐
-         ▼               ▼                  ▼
-  ┌─────────────┐ ┌─────────────┐  ┌─────────────────────┐
-  │  Contour    │ │   FastSAM   │  │  YOLOv8x + SAM      │
-  │  (OpenCV)   │ │   (AI)      │  │  Two-Model Pipeline  │
-  └──────┬──────┘ └──────┬──────┘  └──────────┬──────────┘
-         └───────────────┼─────────────────────┘
-                         ▼
-              ┌──────────────────────┐
-              │  Measurement Engine  │
-              │  Sobel · PCA · ArUco │
-              └──────────┬───────────┘
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-  ┌──────────────┐ ┌──────────┐ ┌──────────────┐
-  │  PostgreSQL  │ │  Modbus  │ │  SKU Profile │
-  │  (Results)  │ │  PLC RTU │ │  Manager     │
-  └──────────────┘ └──────────┘ └──────────────┘
-```
 
 ---
 

@@ -10,11 +10,12 @@ A comprehensive overview of my technical toolkit — built through production de
   <div class="skill-group">
     <h3>🤖 Generative AI & Agents</h3>
     <div class="skill-chips">
-      <span class="chip hot">Gemini 2.0 Flash</span>
+      <span class="chip hot">Gemini API</span>
       <span class="chip hot">Google ADK Agents</span>
       <span class="chip hot">Vertex AI</span>
       <span class="chip">LangChain</span>
       <span class="chip">Ollama</span>
+      <span class="chip">Llama3</span>
       <span class="chip">RAG Systems</span>
       <span class="chip">Prompt Engineering</span>
     </div>
