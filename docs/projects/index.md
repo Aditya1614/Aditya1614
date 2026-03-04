@@ -40,6 +40,9 @@
     <div class="tech-tags">
       <span>LangChain</span><span>FAISS</span><span>BM25</span><span>Python</span>
     </div>
+    <div class="project-card-footer">
+      <a href="https://repository.bsi.ac.id/repo/74042/EVALUASI-KINERJA-BM25-DAN-FAISS-DALAM-SISTEM-RETRIEVAL-AUGMENTED-GENERATION-(RAG)-BERBASIS-LANGCHAIN" target="_blank" class="card-link-ghost">Publication ↗</a>
+    </div>
   </div>
 
   <div class="project-card">

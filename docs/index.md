@@ -74,7 +74,7 @@ hide:
 
 ---
 
-## GCP Highlights
+## Highlights
 
 <div class="gcp-highlight-grid">
   <div class="gcp-card">
@@ -102,7 +102,7 @@ hide:
 | Recognition | Issuer | Year |
 |---|---|---|
 | 🥇 1st Winner — IT Bootcamp: Software Dev & Network Security | Universitas BSI | 2023 |
-| 🥉 3rd Winner — PIKMI Software Development Competition | Universitas BSI (National) | 2023 |
+| 🥉 3rd Winner — PIKMI Software Development National Competition | Universitas BSI (National) | 2023 |
 | 🏅 Top 20 — Data Science Competition | StarCore Analytics (National) | 2023 |
 | BNSP Certified Program Analyst | BNSP | Aug 2024 – 2027 |
 | TensorFlow Developer Specialization | DeepLearning.AI | 2024 |
